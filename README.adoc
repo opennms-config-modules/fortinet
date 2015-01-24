@@ -1,0 +1,36 @@
+# Fortinet
+
+OpenNMS configuration module for Fortinet devices.
+
+## Installation
+
+.Download and install from GitHub
+[source, bash]
+----
+cd $OPENNMS_HOME/etc/modules-available
+git clone https://github.com/opennms-config-modules/fortinet.git
+----
+
+### Datacollection
+
+.Install datacollection configuration
+[source, bash]
+----
+cd $OPENNMS_HOME/etc/datacollection
+ln -s ../modules-available/fortinet/datacollection/*.xml .
+----
+
+.Include in datacollection-config.xml
+[source, xml]
+----
+
+----
+
+### Graph report definitions
+
+.Install graph report definitions
+[source, bash]
+----
+cd $OPENNMS_HOME/etc/snmp-graph.properties.d
+ln -s ../modules-available/fortinet/graphs/*.properties .
+----

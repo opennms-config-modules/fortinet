@@ -1,0 +1,6 @@
+name="fortinet"
+maintainer="The OpenNMS Group, Inc."
+maintainer_email="ronny@opennms.org"
+license="GNU AFFERO GENERAL PUBLIC LICENSE 3"
+description="Monitoring configuration module for Fortinet devices."
+version="0.1"
