@@ -11,6 +11,27 @@ cd $OPENNMS_HOME/etc/modules-available
 git clone https://github.com/opennms-config-modules/fortinet.git
 ----
 
+### Events
+.Install Fortinet events
+[source, bash]
+----
+cd $OPENNMS_HOME/etc/events
+ln -s ../modules-available/fortinet/events/*.xml .
+----
+
+.Include in eventconf.xml
+[source, xml]
+----
+<event-file>events/fortinet.forticore-v4.events.xml</event-file>
+<event-file>events/fortinet.forticore-v52.events.xml</event-file>
+<event-file>events/fortinet.fortigate-v4.events.xml</event-file>
+<event-file>events/fortinet.fortigate-v52.events.xml</event-file>
+<event-file>events/fortinet.fortimail.events.xml</event-file>
+<event-file>events/fortinet.fortimanager.analyzer.events.xml</event-file>
+<event-file>events/fortinet.fortirecorder.events.xml</event-file>
+<event-file>events/fortinet.fortivoice.events.xml</event-file>
+----
+
 ### Datacollection
 
 .Install datacollection configuration
@@ -23,7 +44,7 @@ ln -s ../modules-available/fortinet/datacollection/*.xml .
 .Include in datacollection-config.xml
 [source, xml]
 ----
-
+<include-collection dataCollectionGroup="Fortinet"/>
 ----
 
 ### Graph report definitions
