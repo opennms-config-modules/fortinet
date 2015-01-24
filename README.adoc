@@ -34,3 +34,10 @@ ln -s ../modules-available/fortinet/datacollection/*.xml .
 cd $OPENNMS_HOME/etc/snmp-graph.properties.d
 ln -s ../modules-available/fortinet/graphs/*.properties .
 ----
+
+# License & Authors
+
+- Author:: Marcel Fuhrmann (<fuhrmann@n3rd.org>)
+- Author:: Ronny Trommer (<ronny@opennms.org>)
+
+Licensed under the GNU Affero General Public License 3+. You may obtain a copy of the License at http://www.gnu.org/licenses/agpl-3.0.html.
