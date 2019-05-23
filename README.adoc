@@ -20,17 +20,10 @@ git clone https://github.com/opennms-config-modules/fortinet.git
 cp ${HOME}/opennms-config-workspace/fortinet/events/*.xml ${OPENNMS_HOME}/etc/events
 ----
 
-.Include in eventconf.xml
+.Include needed config in eventconf.xml
 [source, xml]
 ----
-<event-file>events/fortinet.forticore-v4.events.xml</event-file>
-<event-file>events/fortinet.forticore-v52.events.xml</event-file>
-<event-file>events/fortinet.fortigate-v4.events.xml</event-file>
-<event-file>events/fortinet.fortigate-v52.events.xml</event-file>
-<event-file>events/fortinet.fortimail.events.xml</event-file>
-<event-file>events/fortinet.fortimanager.analyzer.events.xml</event-file>
-<event-file>events/fortinet.fortirecorder.events.xml</event-file>
-<event-file>events/fortinet.fortivoice.events.xml</event-file>
+<event-file>events/fortinet.forticore-v62.events.xml</event-file>
 ----
 
 === Data Collection
@@ -41,7 +34,7 @@ cp ${HOME}/opennms-config-workspace/fortinet/events/*.xml ${OPENNMS_HOME}/etc/ev
 cp ${HOME}/opennms-config-workspace/fortinet/datacollection/*.xml ${OPENNMS_HOME}/etc/datacollection
 ----
 
-.Include in datacollection-config.xml
+.Include needed entries in datacollection-config.xml
 [source, xml]
 ----
 <include-collection dataCollectionGroup="Fortinet"/>
