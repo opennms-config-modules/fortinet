@@ -1,0 +1,66 @@
+<resource-types>
+    <resourceType name="fgApHTTPStatsEntry" label="Fortigate HTTP Proxy Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgApSMTPStatsEntry" label="Fortigate SMTP Proxy Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgApPOP3StatsEntry" label="Fortigate POP3 Proxy Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgApIMAPStatsEntry" label="Fortigate IMAP Proxy Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgApNNTPStatsEntry" label="Fortigate NNTP Proxy Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgApIMStatsEntry" label="Fortigate IM Proxy Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgApSIPStatsEntry" label="Fortigate SIP Proxy Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgAppSuStatsEntry" label="Fortigate Scan Unit" resourceLabel="Scan Unit: ${fgAppSuIndex}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgAppVoIPStatsEntry" label="Fortigate VoIP Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgAppP2PStatsEntry" label="Fortigate P2P Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgAppIMStatsEntry" label="Fortigate IM Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgApFTPStatsEntry" label="Fortigate FTP Proxy Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgWebChDskStsEntry" label="Fortigate Web Cache Disk Statistics"
+                  resourceLabel="Cache Disk: ${fgWebCacheDisk}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+</resource-types>

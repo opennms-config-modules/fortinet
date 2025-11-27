@@ -1,0 +1,21 @@
+<resource-types>
+    <resourceType name="fgExProStaEntry" label="Fortigate Explicit Proxy Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgExProScriStaEntry" label="Fortigate Explicit Proxy Script Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgAppSuStatsEntry" label="Fortigate Scan Unit" resourceLabel="Virtual Domain: ${fgAppSuIndex}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgExProFiltStaEntry" label="Fortigate Explicit Proxy Filter Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+</resource-types>

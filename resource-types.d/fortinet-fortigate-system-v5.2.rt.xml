@@ -1,0 +1,11 @@
+<resource-types>
+    <resourceType name="fgProcessorEntIndex" label="Fortigate Processor" resourceLabel="CPU: ${fgProcEntIndex}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="fgVpnSslStatsEntry" label="Fortigate SSL VPN Statistics"
+                  resourceLabel="Virtual Domain: ${fgVdEntName}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+</resource-types>

@@ -1,0 +1,7 @@
+<resource-types>
+    <resourceType name="fgHaStatsindex" label="Fortigate High Availability"
+                  resourceLabel="Hostname: ${fgHaStatsHostname}">
+        <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
+        <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
+    </resourceType>
+</resource-types>

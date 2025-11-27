@@ -32,6 +32,7 @@ cp ${HOME}/opennms-config-workspace/fortinet/events/*.xml ${OPENNMS_HOME}/etc/ev
 [source, bash]
 ----
 cp ${HOME}/opennms-config-workspace/fortinet/datacollection/*.xml ${OPENNMS_HOME}/etc/datacollection
+cp ${HOME}/opennms-config-workspace/fortinet/resource-types.d/*.xml ${OPENNMS_HOME}/etc/resource-types.d
 ----
 
 .Include needed entries in datacollection-config.xml

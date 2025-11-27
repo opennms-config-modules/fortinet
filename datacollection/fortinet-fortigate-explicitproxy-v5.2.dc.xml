@@ -1,20 +1,4 @@
 <datacollection-group xmlns="http://xmlns.opennms.org/xsd/config/datacollection" name="Fortinet-Fortigate-ExplicitProxy-v5.2">
-   <resourceType name="fgExProStaEntry" label="Fortigate Explicit Proxy Statistics" resourceLabel="Virtual Domain: ${fgVdEntName}">
-      <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
-      <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
-   </resourceType>
-   <resourceType name="fgExProScriStaEntry" label="Fortigate Explicit Proxy Script Statistics" resourceLabel="Virtual Domain: ${fgVdEntName}">
-      <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
-      <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
-   </resourceType>
-   <resourceType name="fgAppSuStatsEntry" label="Fortigate Scan Unit" resourceLabel="Virtual Domain: ${fgAppSuIndex}">
-      <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
-      <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
-   </resourceType>
-   <resourceType name="fgExProFiltStaEntry" label="Fortigate Explicit Proxy Filter Statistics" resourceLabel="Virtual Domain: ${fgVdEntName}">
-      <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
-      <storageStrategy class="org.opennms.netmgt.collection.support.IndexStorageStrategy"/>
-   </resourceType>
    <group name="fgExplicitProxyInfo" ifType="ignore">
       <mibObj oid=".1.3.6.1.4.1.12356.101.10.112.1.2" instance="0" alias="fgExProMemUsage" type="Gauge32"/>
       <mibObj oid=".1.3.6.1.4.1.12356.101.10.112.1.3" instance="0" alias="fgExProRequests" type="Counter64"/>
